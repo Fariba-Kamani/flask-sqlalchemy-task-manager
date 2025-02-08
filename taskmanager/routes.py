@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 from flask import render_template, request, redirect, url_for
+=======
+from flask import render_template
+>>>>>>> 3e4e25ce3051093a154542d1dd38896ce4167780
 from taskmanager import app, db
 from taskmanager.models import Category, Task
 
 
 @app.route("/")
 def home():
+<<<<<<< HEAD
     return render_template("tasks.html")
 
 @app.route("/categories")
@@ -19,3 +24,6 @@ def add_category():
         db.session.commit()
         return redirect(url_for("categories"))
     return render_template("add_category.html")
+=======
+    return render_template("tasks.html")
+>>>>>>> 3e4e25ce3051093a154542d1dd38896ce4167780
